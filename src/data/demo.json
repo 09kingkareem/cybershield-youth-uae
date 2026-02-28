@@ -1,0 +1,14 @@
+[
+  { "name": "GEMS Wellington Academy", "emirate": "Dubai", "students": 420, "cri": 78, "password": 82, "phishing": 75, "privacy": 80, "device": 74 },
+  { "name": "Dubai International Academy", "emirate": "Dubai", "students": 380, "cri": 65, "password": 60, "phishing": 70, "privacy": 62, "device": 68 },
+  { "name": "Abu Dhabi Grammar School", "emirate": "Abu Dhabi", "students": 510, "cri": 72, "password": 70, "phishing": 68, "privacy": 78, "device": 72 },
+  { "name": "Al Bateen Academy", "emirate": "Abu Dhabi", "students": 340, "cri": 58, "password": 55, "phishing": 52, "privacy": 65, "device": 60 },
+  { "name": "Sharjah American International School", "emirate": "Sharjah", "students": 290, "cri": 61, "password": 58, "phishing": 64, "privacy": 60, "device": 62 },
+  { "name": "Victoria International School", "emirate": "Sharjah", "students": 250, "cri": 45, "password": 40, "phishing": 48, "privacy": 42, "device": 50 },
+  { "name": "Ajman Academy", "emirate": "Ajman", "students": 200, "cri": 52, "password": 48, "phishing": 55, "privacy": 50, "device": 55 },
+  { "name": "RAK Academy", "emirate": "Ras Al Khaimah", "students": 180, "cri": 68, "password": 72, "phishing": 65, "privacy": 68, "device": 67 },
+  { "name": "Fujairah International Academy", "emirate": "Fujairah", "students": 150, "cri": 55, "password": 50, "phishing": 58, "privacy": 54, "device": 58 },
+  { "name": "UAQ National School", "emirate": "Umm Al Quwain", "students": 120, "cri": 42, "password": 38, "phishing": 45, "privacy": 40, "device": 45 },
+  { "name": "GEMS Modern Academy", "emirate": "Dubai", "students": 460, "cri": 82, "password": 85, "phishing": 78, "privacy": 84, "device": 80 },
+  { "name": "Cranleigh Abu Dhabi", "emirate": "Abu Dhabi", "students": 320, "cri": 75, "password": 78, "phishing": 72, "privacy": 76, "device": 74 }
+]

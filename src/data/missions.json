@@ -1,0 +1,242 @@
+[
+  {
+    "id": "pw-101",
+    "title": "Password Fortress",
+    "category": "password",
+    "difficulty": "Beginner",
+    "duration": "10 min",
+    "description": "Learn the fundamentals of creating strong, unique passwords and why they matter for your digital security.",
+    "lessons": [
+      {
+        "title": "Why Passwords Matter",
+        "content": "Passwords are the first line of defense for your digital identity. A weak password is like leaving your front door unlocked — anyone can walk in.\n\n**Key Facts:**\n- 81% of data breaches involve weak or stolen passwords\n- The average person has 100+ online accounts\n- A 6-character password can be cracked in seconds\n\n**What makes a strong password?**\n- At least 12 characters long\n- Mix of uppercase, lowercase, numbers, and symbols\n- No personal information (birthdays, names, etc.)\n- Unique for every account"
+      },
+      {
+        "title": "Password Managers: Your Digital Vault",
+        "content": "Remembering unique passwords for every account is impossible — that's where password managers come in.\n\n**How they work:**\n1. You create one strong master password\n2. The manager generates and stores unique passwords for each site\n3. Auto-fills login forms securely\n4. Encrypts everything with military-grade encryption\n\n**Popular options:** Bitwarden (free), 1Password, LastPass\n\n**Pro tip:** Enable the password generator feature and set it to create 16+ character passwords with all character types."
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "What is the minimum recommended length for a strong password?",
+        "options": ["6 characters", "8 characters", "12 characters", "4 characters"],
+        "correct": 2
+      },
+      {
+        "question": "What percentage of data breaches involve weak or stolen passwords?",
+        "options": ["50%", "65%", "81%", "25%"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "pw-201",
+    "title": "Two-Factor Shield",
+    "category": "password",
+    "difficulty": "Intermediate",
+    "duration": "12 min",
+    "description": "Master two-factor authentication (2FA) and add an extra layer of security to all your important accounts.",
+    "lessons": [
+      {
+        "title": "Understanding 2FA",
+        "content": "Two-factor authentication requires two different types of verification before granting access.\n\n**The three factors:**\n1. **Something you know** — password, PIN\n2. **Something you have** — phone, security key\n3. **Something you are** — fingerprint, face scan\n\n2FA combines two of these, so even if your password is stolen, attackers still can't access your account.\n\n**Types of 2FA (best to worst):**\n- Hardware security keys (YubiKey)\n- Authenticator apps (Google Authenticator, Authy)\n- SMS codes (better than nothing, but vulnerable to SIM swapping)"
+      },
+      {
+        "title": "Setting Up 2FA Everywhere",
+        "content": "**Priority accounts for 2FA:**\n1. Email (it's the key to all other accounts)\n2. Banking and financial accounts\n3. Social media\n4. Cloud storage\n5. School/work accounts\n\n**Setup steps:**\n1. Go to account security settings\n2. Find 'Two-factor authentication' or 'Two-step verification'\n3. Choose your method (authenticator app recommended)\n4. Scan the QR code with your authenticator app\n5. Save backup codes in a secure location\n\n**Important:** Always save your backup codes — if you lose your phone, these are your only way back in."
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "Which 2FA method is considered the most secure?",
+        "options": ["SMS codes", "Email codes", "Hardware security keys", "Phone calls"],
+        "correct": 2
+      },
+      {
+        "question": "Which account should you prioritize for 2FA setup?",
+        "options": ["Gaming accounts", "Email", "Shopping sites", "Forums"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "ph-101",
+    "title": "Phishing Detective",
+    "category": "phishing",
+    "difficulty": "Beginner",
+    "duration": "10 min",
+    "description": "Learn to identify phishing attempts across email, SMS, and social media before they trick you.",
+    "lessons": [
+      {
+        "title": "Anatomy of a Phishing Attack",
+        "content": "Phishing is a social engineering attack that tricks you into revealing sensitive information.\n\n**Common phishing tactics:**\n- **Urgency:** 'Your account will be closed in 24 hours!'\n- **Authority:** Impersonating banks, government, or tech companies\n- **Fear:** 'Suspicious activity detected on your account'\n- **Reward:** 'You've won a free iPhone!'\n\n**Red flags to watch for:**\n- Misspelled domain names (amaz0n.com, paypa1.com)\n- Generic greetings ('Dear Customer' instead of your name)\n- Suspicious attachments\n- Links that don't match the claimed sender\n- Poor grammar and formatting"
+      },
+      {
+        "title": "Real vs. Fake: Practical Analysis",
+        "content": "**How to verify a suspicious message:**\n1. **Check the sender's actual email address** — hover over the name to see the real address\n2. **Hover over links** (don't click!) — check if the URL matches the claimed website\n3. **Look for HTTPS** — legitimate sites use secure connections\n4. **Contact the company directly** — use their official website, not the link in the email\n\n**If you've been phished:**\n1. Change your password immediately\n2. Enable 2FA\n3. Monitor your accounts for suspicious activity\n4. Report the phishing attempt"
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "Which is a common red flag of a phishing email?",
+        "options": ["Personalized greeting", "Official company logo", "Misspelled domain name", "Sent during business hours"],
+        "correct": 2
+      },
+      {
+        "question": "What should you do if you suspect a phishing email from your bank?",
+        "options": ["Click the link to check", "Reply asking if it's real", "Go directly to your bank's official website", "Forward it to friends"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "ph-201",
+    "title": "Social Engineering Defense",
+    "category": "phishing",
+    "difficulty": "Intermediate",
+    "duration": "15 min",
+    "description": "Advanced techniques for defending against sophisticated social engineering attacks beyond basic phishing.",
+    "lessons": [
+      {
+        "title": "Beyond Email: Modern Attack Vectors",
+        "content": "Attackers have evolved beyond simple email phishing.\n\n**Modern social engineering tactics:**\n- **Smishing:** Phishing via SMS ('Your package delivery failed, click here')\n- **Vishing:** Voice phishing — fake tech support or bank calls\n- **Spear phishing:** Targeted attacks using your personal info from social media\n- **Pretexting:** Creating a fake scenario to extract information\n- **Baiting:** Leaving infected USB drives in public places\n\n**Why it works:**\nSocial engineering exploits human psychology — trust, fear, curiosity, and helpfulness. Technical defenses can't fully protect against human manipulation."
+      },
+      {
+        "title": "Building Your Defense Mindset",
+        "content": "**The STOP method:**\n1. **S**top — Pause before reacting to urgent requests\n2. **T**hink — Does this request make sense? Would this company contact me this way?\n3. **O**bserve — Check for red flags, verify through official channels\n4. **P**rotect — Report suspicious activity, share awareness with others\n\n**Advanced protection:**\n- Use unique email addresses for different services\n- Limit personal information shared on social media\n- Be skeptical of unsolicited contact, even from known organizations\n- Verify requests through a separate communication channel\n- Keep software updated to patch known vulnerabilities"
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "What is 'smishing'?",
+        "options": ["Email phishing", "Phishing via SMS", "Voice phishing", "Social media scams"],
+        "correct": 1
+      },
+      {
+        "question": "What does the 'S' in the STOP method stand for?",
+        "options": ["Search", "Stop", "Scan", "Submit"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "pr-101",
+    "title": "Privacy Foundations",
+    "category": "privacy",
+    "difficulty": "Beginner",
+    "duration": "10 min",
+    "description": "Understand your digital footprint and learn essential practices for protecting your personal data online.",
+    "lessons": [
+      {
+        "title": "Your Digital Footprint",
+        "content": "Every online action leaves a trace — your digital footprint.\n\n**Active footprint** (what you intentionally share):\n- Social media posts and profiles\n- Online purchases and registrations\n- Comments and reviews\n\n**Passive footprint** (collected without your direct action):\n- Browsing history and cookies\n- Location data from your phone\n- App usage patterns\n- IP addresses\n\n**Why it matters:**\n- Employers and universities check digital footprints\n- Data brokers collect and sell your information\n- Cybercriminals use personal data for targeted attacks\n- Once online, information is nearly impossible to fully remove"
+      },
+      {
+        "title": "Essential Privacy Practices",
+        "content": "**Immediate actions to take:**\n1. **Review privacy settings** on all social media platforms\n2. **Use private browsing** or a privacy-focused browser\n3. **Disable location sharing** unless actively needed\n4. **Review app permissions** — remove access for apps that don't need it\n5. **Use different email addresses** for different purposes\n\n**Data minimization principle:**\nOnly share the minimum information needed for a service to function. Ask yourself: 'Do they really need this information?'\n\n**Privacy tools:**\n- Browser: Firefox with privacy extensions\n- Search: DuckDuckGo\n- Messaging: Signal or WhatsApp (end-to-end encrypted)\n- VPN for public networks"
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "What is a 'passive' digital footprint?",
+        "options": ["Posts you make on social media", "Data collected without your direct action", "Your email address", "Your password"],
+        "correct": 1
+      },
+      {
+        "question": "What is the data minimization principle?",
+        "options": ["Deleting all your data", "Sharing only the minimum information needed", "Using the smallest possible password", "Minimizing screen time"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "pr-201",
+    "title": "Advanced Data Protection",
+    "category": "privacy",
+    "difficulty": "Advanced",
+    "duration": "15 min",
+    "description": "Advanced strategies for data protection including encryption, secure communication, and privacy regulations.",
+    "lessons": [
+      {
+        "title": "Encryption and Secure Communication",
+        "content": "Encryption converts your data into unreadable code that only authorized parties can decrypt.\n\n**Types of encryption:**\n- **In transit:** Protects data as it travels (HTTPS, VPN)\n- **At rest:** Protects stored data (device encryption, encrypted cloud storage)\n- **End-to-end (E2E):** Only sender and recipient can read messages\n\n**Practical encryption:**\n- Enable full-disk encryption on your devices\n- Use messaging apps with E2E encryption\n- Check for HTTPS (padlock icon) on websites\n- Use encrypted cloud storage for sensitive files\n- Encrypt sensitive email attachments"
+      },
+      {
+        "title": "Know Your Rights: UAE Data Protection",
+        "content": "The UAE has comprehensive data protection frameworks:\n\n**Key principles:**\n- **Consent:** Organizations must obtain your consent before collecting data\n- **Purpose limitation:** Data should only be used for stated purposes\n- **Data minimization:** Only necessary data should be collected\n- **Right to access:** You can request to see what data organizations hold about you\n- **Right to deletion:** You can request removal of your personal data\n\n**What you can do:**\n- Read privacy policies before agreeing\n- Exercise your right to access your data\n- Request deletion of unnecessary data\n- Report data protection violations to relevant authorities"
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "What does end-to-end encryption mean?",
+        "options": ["Data is encrypted on the server", "Only sender and recipient can read messages", "The internet connection is encrypted", "Your password is encrypted"],
+        "correct": 1
+      },
+      {
+        "question": "Under UAE data protection principles, what right allows you to see what data organizations have about you?",
+        "options": ["Right to deletion", "Right to access", "Right to portability", "Right to consent"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "dv-101",
+    "title": "Device Lockdown",
+    "category": "device",
+    "difficulty": "Beginner",
+    "duration": "10 min",
+    "description": "Essential steps to secure your phone, laptop, and other devices against common threats.",
+    "lessons": [
+      {
+        "title": "Securing Your Devices",
+        "content": "Your devices are treasure troves of personal information. Securing them is essential.\n\n**Phone security essentials:**\n- Use biometric lock (fingerprint/face) PLUS a strong PIN\n- Enable device encryption (on by default on modern phones)\n- Turn on Find My Device / Find My iPhone\n- Enable remote wipe capability\n- Install apps only from official stores\n\n**Laptop security essentials:**\n- Use a strong login password\n- Enable full-disk encryption (BitLocker/FileVault)\n- Set screen lock after 5 minutes of inactivity\n- Keep your operating system updated\n- Use built-in firewall"
+      },
+      {
+        "title": "Software Updates and Malware Protection",
+        "content": "**Why updates matter:**\nSoftware updates patch security vulnerabilities. Delaying updates leaves you exposed to known attacks.\n\n**Update strategy:**\n1. Enable automatic updates on all devices\n2. Restart devices promptly when updates require it\n3. Update apps regularly through official stores\n4. Update your browser — it's a primary attack vector\n\n**Malware protection:**\n- Windows: Built-in Windows Defender is sufficient for most users\n- Mac: Keep Gatekeeper and XProtect enabled\n- Phone: Avoid sideloading apps\n- All devices: Don't click suspicious links or download unknown attachments"
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "Why are software updates important for security?",
+        "options": ["They add new features", "They make devices faster", "They patch security vulnerabilities", "They free up storage"],
+        "correct": 2
+      },
+      {
+        "question": "What should you enable to protect a lost device?",
+        "options": ["Bluetooth", "Remote wipe capability", "Location sharing with everyone", "Auto-brightness"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "dv-201",
+    "title": "Network Defense",
+    "category": "device",
+    "difficulty": "Intermediate",
+    "duration": "12 min",
+    "description": "Protect yourself on public and home networks with VPNs, firewall basics, and Wi-Fi security.",
+    "lessons": [
+      {
+        "title": "Wi-Fi Security Threats",
+        "content": "Public Wi-Fi networks are hunting grounds for cybercriminals.\n\n**Common attacks on public Wi-Fi:**\n- **Evil twin:** Fake Wi-Fi networks that mimic legitimate ones\n- **Man-in-the-middle:** Intercepting data between your device and the network\n- **Packet sniffing:** Capturing unencrypted data sent over the network\n- **Session hijacking:** Stealing your active login sessions\n\n**Safe practices:**\n- Never access banking or sensitive accounts on public Wi-Fi\n- Verify the network name with the establishment\n- Use a VPN to encrypt all your traffic\n- Forget public networks after use\n- Turn off auto-connect for Wi-Fi"
+      },
+      {
+        "title": "VPNs and Home Network Security",
+        "content": "**VPN (Virtual Private Network):**\nA VPN creates an encrypted tunnel for all your internet traffic, protecting it from interception.\n\n**When to use a VPN:**\n- Always on public Wi-Fi\n- When accessing sensitive information remotely\n- When you want to prevent ISP tracking\n\n**Home network security:**\n1. Change your router's default admin password\n2. Use WPA3 encryption (or WPA2 at minimum)\n3. Create a guest network for visitors\n4. Update router firmware regularly\n5. Disable WPS (Wi-Fi Protected Setup)\n6. Consider hiding your network SSID\n\n**Router check:** Log into your router (usually 192.168.1.1) and review all security settings."
+      }
+    ],
+    "knowledgeCheck": [
+      {
+        "question": "What is an 'evil twin' attack?",
+        "options": ["A virus that duplicates files", "A fake Wi-Fi network mimicking a real one", "Two people sharing an account", "A phishing email sent twice"],
+        "correct": 1
+      },
+      {
+        "question": "What encryption standard should your home Wi-Fi use at minimum?",
+        "options": ["WEP", "WPA", "WPA2", "No encryption"],
+        "correct": 2
+      }
+    ]
+  }
+]

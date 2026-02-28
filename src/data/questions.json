@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "category": "password",
+    "text": "How do you typically create passwords for your online accounts?",
+    "options": [
+      { "label": "I use the same simple password everywhere", "value": 0 },
+      { "label": "I use a few variations of the same password", "value": 1 },
+      { "label": "I create unique passwords but keep them short", "value": 2 },
+      { "label": "I use long, unique passwords with mixed characters", "value": 4 },
+      { "label": "I use a password manager to generate and store unique passwords", "value": 5 }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "password",
+    "text": "How often do you update your passwords for important accounts?",
+    "options": [
+      { "label": "Never — I set them once and forget", "value": 0 },
+      { "label": "Only when forced by the service", "value": 1 },
+      { "label": "Once a year or so", "value": 2 },
+      { "label": "Every few months for critical accounts", "value": 4 },
+      { "label": "Regularly, and I use 2FA on all important accounts", "value": 5 }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "password",
+    "text": "Do you use two-factor authentication (2FA) on your accounts?",
+    "options": [
+      { "label": "I don't know what 2FA is", "value": 0 },
+      { "label": "I've heard of it but never set it up", "value": 1 },
+      { "label": "I use it on one or two accounts", "value": 2 },
+      { "label": "I use it on most important accounts", "value": 4 },
+      { "label": "I use it on every account that supports it", "value": 5 }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "phishing",
+    "text": "You receive an urgent email from your bank asking you to verify your account. What do you do?",
+    "options": [
+      { "label": "Click the link immediately — it looks official", "value": 0 },
+      { "label": "Click only if it looks like it's from my bank", "value": 1 },
+      { "label": "Check the sender's email address before clicking", "value": 2 },
+      { "label": "Go directly to the bank's website without clicking the link", "value": 4 },
+      { "label": "Report the email as suspicious and verify through official channels", "value": 5 }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "phishing",
+    "text": "How do you handle links shared in social media messages from people you know?",
+    "options": [
+      { "label": "I click on anything my friends share", "value": 0 },
+      { "label": "I click if the message seems normal", "value": 1 },
+      { "label": "I'm cautious if the link looks unusual", "value": 2 },
+      { "label": "I verify with the person before clicking unknown links", "value": 4 },
+      { "label": "I never click links in messages — I search for content independently", "value": 5 }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "phishing",
+    "text": "A website offers a free gift card if you enter your email and phone number. What do you do?",
+    "options": [
+      { "label": "Enter my real information — free stuff is great", "value": 0 },
+      { "label": "Enter my email but not phone number", "value": 1 },
+      { "label": "Search online to see if the offer is legitimate", "value": 3 },
+      { "label": "Recognize it as a likely scam and close the page", "value": 4 },
+      { "label": "Report the page and warn others about it", "value": 5 }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "privacy",
+    "text": "What privacy settings do you use on your social media profiles?",
+    "options": [
+      { "label": "Everything is public — I haven't checked settings", "value": 0 },
+      { "label": "Mostly public with a few restrictions", "value": 1 },
+      { "label": "I've reviewed settings but left most things open", "value": 2 },
+      { "label": "I've carefully configured who can see my posts and info", "value": 4 },
+      { "label": "Strict privacy — limited profile, approved followers only", "value": 5 }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "privacy",
+    "text": "How do you handle app permissions on your phone?",
+    "options": [
+      { "label": "I always accept all permissions without reading", "value": 0 },
+      { "label": "I skim permissions but accept anyway", "value": 1 },
+      { "label": "I deny permissions that seem unnecessary", "value": 3 },
+      { "label": "I carefully review and limit all permissions", "value": 4 },
+      { "label": "I regularly audit app permissions and revoke unused ones", "value": 5 }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "privacy",
+    "text": "What personal information do you share when signing up for new apps or services?",
+    "options": [
+      { "label": "Whatever they ask for — full name, phone, address", "value": 0 },
+      { "label": "Most fields including optional ones", "value": 1 },
+      { "label": "Only required fields", "value": 3 },
+      { "label": "Minimum required info, sometimes with aliases", "value": 4 },
+      { "label": "I use burner emails and share minimal data", "value": 5 }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "device",
+    "text": "How do you keep your devices and software updated?",
+    "options": [
+      { "label": "I ignore update notifications", "value": 0 },
+      { "label": "I update when I remember or when forced", "value": 1 },
+      { "label": "I update my phone but not other devices", "value": 2 },
+      { "label": "I regularly update all devices and apps", "value": 4 },
+      { "label": "Auto-updates enabled everywhere, and I verify critical patches", "value": 5 }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "device",
+    "text": "What do you do when connecting to public Wi-Fi?",
+    "options": [
+      { "label": "Connect to any available network", "value": 0 },
+      { "label": "Use public Wi-Fi for everything including banking", "value": 1 },
+      { "label": "Avoid sensitive activities on public Wi-Fi", "value": 2 },
+      { "label": "Use a VPN when on public networks", "value": 4 },
+      { "label": "Avoid public Wi-Fi entirely or use VPN + verify network authenticity", "value": 5 }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "device",
+    "text": "How do you secure your phone and laptop?",
+    "options": [
+      { "label": "No lock screen or password", "value": 0 },
+      { "label": "Simple PIN like 1234", "value": 1 },
+      { "label": "A reasonable password or pattern", "value": 2 },
+      { "label": "Biometric lock plus strong password", "value": 4 },
+      { "label": "Biometric + encryption + remote wipe capability enabled", "value": 5 }
+    ]
+  }
+]
