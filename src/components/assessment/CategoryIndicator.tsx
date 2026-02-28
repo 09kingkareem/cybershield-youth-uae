@@ -1,4 +1,5 @@
 import { CATEGORIES, CATEGORY_META } from '@/lib/constants';
+import CategoryIcon from '@/components/ui/CategoryIcon';
 import type { Category } from '@/lib/types';
 
 interface CategoryIndicatorProps {
@@ -23,7 +24,7 @@ export default function CategoryIndicator({ currentCategory, completedCategories
                 : 'border-panel-border text-muted'
             }`}
           >
-            <span>{CATEGORY_META[cat].icon}</span>
+            <CategoryIcon category={cat} size="sm" />
             <span className="hidden sm:inline">{CATEGORY_META[cat].label}</span>
           </div>
         );

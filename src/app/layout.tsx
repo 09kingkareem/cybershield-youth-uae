@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CyberShield Youth UAE",
-  description: "National Youth Cyber Resilience Platform — Measure, train, and strengthen cyber hygiene across the UAE.",
+  title: "CyberShield Youth UAE — National Cyber Resilience Console",
+  description: "National Cyber Resilience Monitoring & Projection Console — Strategic cyber hygiene assessment for UAE youth.",
 };
 
 export default function RootLayout({

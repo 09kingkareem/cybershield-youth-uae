@@ -1,0 +1,46 @@
+{
+  "lastUpdated": "2026-02-28T08:00:00Z",
+  "source": "Mock — architected for future CISA / NESA API integration",
+  "items": [
+    {
+      "id": "cve-total",
+      "label": "Published CVEs (2026 YTD)",
+      "value": 487,
+      "unit": "vulnerabilities",
+      "trend": "up",
+      "delta": "+12% vs 2025",
+      "severity": "info",
+      "briefing": "487 new CVEs published year-to-date, 12% above the same period in 2025. Increased attack surface requires heightened awareness training."
+    },
+    {
+      "id": "cisa-kev",
+      "label": "CISA Known Exploited Vulnerabilities",
+      "value": 1197,
+      "unit": "entries",
+      "trend": "up",
+      "delta": "+43 since Jan 2026",
+      "severity": "elevated",
+      "briefing": "The CISA KEV catalog has grown to 1,197 entries. 43 additions in 2026 indicate active exploitation campaigns relevant to educational institutions."
+    },
+    {
+      "id": "edu-risk",
+      "label": "Education Sector Risk Level",
+      "value": "High",
+      "unit": "",
+      "trend": "flat",
+      "delta": "Unchanged since Q4 2025",
+      "severity": "elevated",
+      "briefing": "Education remains a high-risk sector globally. Ransomware groups continue to target school networks due to limited IT budgets and high data value."
+    },
+    {
+      "id": "phishing-trend",
+      "label": "Phishing Campaigns Targeting Youth",
+      "value": 2340,
+      "unit": "campaigns/month",
+      "trend": "up",
+      "delta": "+18% QoQ",
+      "severity": "critical",
+      "briefing": "Youth-targeted phishing campaigns have risen 18% quarter-over-quarter, with social media credential harvesting and gaming scams as primary vectors."
+    }
+  ]
+}

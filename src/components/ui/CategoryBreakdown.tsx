@@ -1,5 +1,6 @@
 import Panel from './Panel';
 import ProgressBar from './ProgressBar';
+import CategoryIcon from './CategoryIcon';
 import { CATEGORY_META } from '@/lib/constants';
 import { getTier, getTierColor } from '@/lib/scoring';
 import type { CategoryScore } from '@/lib/types';
@@ -21,7 +22,7 @@ export default function CategoryBreakdown({ scores }: CategoryBreakdownProps) {
             <div key={s.category}>
               <div className="flex items-center justify-between mb-1">
                 <span className="text-sm flex items-center gap-2">
-                  <span>{meta.icon}</span>
+                  <CategoryIcon category={s.category} size="sm" />
                   {meta.label}
                 </span>
                 <span className="text-sm font-mono" style={{ color }}>{s.normalized}</span>

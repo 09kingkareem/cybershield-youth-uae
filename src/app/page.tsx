@@ -14,14 +14,14 @@ export default function Home() {
       {/* Hero */}
       <section className="py-20 text-center">
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-mono text-accent">
-          National Cyber Resilience Initiative
+          National Cyber Resilience Monitoring &amp; Projection Console
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
           <span className="text-accent">CyberShield</span> Youth UAE
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-muted text-lg leading-relaxed">
-          Measuring and strengthening cyber hygiene readiness for UAE youth aged 15-22.
-          From individual assessments to national-level resilience dashboards.
+          Strategic cyber resilience assessment and monitoring for UAE youth aged 15-22.
+          Behavioral intelligence from individual assessments to national-level strategic indices.
         </p>
         <div className="mt-8 flex items-center justify-center gap-4">
           <Button href="/assessment" size="lg">Start Assessment</Button>
@@ -45,9 +45,9 @@ export default function Home() {
         <h2 className="text-xl font-bold mb-6 text-center">How It Works</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { step: '01', title: 'Assess', desc: 'Complete a 12-question behavioral assessment across 4 cyber hygiene categories.' },
-            { step: '02', title: 'Train', desc: 'Access targeted training missions to strengthen identified weak areas.' },
-            { step: '03', title: 'Monitor', desc: 'Institutions and national bodies track aggregated cyber resilience metrics.' },
+            { step: '01', title: 'Assess', desc: 'Complete a 12-question behavioral assessment across 4 strategic cyber hygiene domains.' },
+            { step: '02', title: 'Train', desc: 'Deploy targeted training missions with projected impact on national resilience indices.' },
+            { step: '03', title: 'Monitor', desc: 'Strategic command view — track resilience indices, threat context, and executive briefings.' },
           ].map((item) => (
             <Panel key={item.step} className="p-6">
               <span className="text-xs font-mono text-accent">{item.step}</span>

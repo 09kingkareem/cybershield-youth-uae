@@ -1,5 +1,6 @@
 import PageShell from '@/components/layout/PageShell';
 import MissionCard from '@/components/missions/MissionCard';
+import CategoryIcon from '@/components/ui/CategoryIcon';
 import { getMissions } from '@/lib/data';
 import { CATEGORIES, CATEGORY_META } from '@/lib/constants';
 
@@ -15,7 +16,7 @@ export default function MissionsPage() {
         return (
           <section key={cat} className="mb-8">
             <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <span>{meta.icon}</span>
+              <CategoryIcon category={cat} size="md" />
               {meta.label}
             </h2>
             <div className="grid md:grid-cols-2 gap-4">

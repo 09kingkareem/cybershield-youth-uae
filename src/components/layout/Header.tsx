@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { href: '/assessment', label: 'Assessment' },
   { href: '/missions', label: 'Missions' },
   { href: '/admin', label: 'Admin' },
-  { href: '/national', label: 'National' },
+  { href: '/national', label: 'Strategic' },
 ];
 
 export default function Header() {

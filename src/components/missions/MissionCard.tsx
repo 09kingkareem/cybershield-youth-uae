@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Panel from '@/components/ui/Panel';
+import CategoryIcon from '@/components/ui/CategoryIcon';
 import { CATEGORY_META } from '@/lib/constants';
 import type { Mission } from '@/lib/types';
 
@@ -14,7 +15,7 @@ export default function MissionCard({ mission }: MissionCardProps) {
     <Link href={`/missions/${mission.id}`}>
       <Panel className="p-5 h-full hover:border-accent/40 transition-all duration-200 cursor-pointer group">
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-lg">{meta.icon}</span>
+          <CategoryIcon category={mission.category} size="sm" />
           <span
             className="text-xs px-2 py-0.5 rounded-full border"
             style={{ borderColor: `${meta.color}40`, color: meta.color, backgroundColor: `${meta.color}10` }}

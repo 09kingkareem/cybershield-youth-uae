@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import PageShell from '@/components/layout/PageShell';
 import Panel from '@/components/ui/Panel';
 import Button from '@/components/ui/Button';
+import CategoryIcon from '@/components/ui/CategoryIcon';
 import LessonContent from '@/components/missions/LessonContent';
 import KnowledgeCheck from '@/components/missions/KnowledgeCheck';
 import { getMissions } from '@/lib/data';
@@ -29,7 +30,7 @@ export default async function MissionDetailPage({ params }: { params: Promise<{ 
             &larr; All Missions
           </Button>
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-lg">{meta.icon}</span>
+            <CategoryIcon category={mission.category} size="md" />
             <span
               className="text-xs px-2 py-0.5 rounded-full border"
               style={{ borderColor: `${meta.color}40`, color: meta.color }}
