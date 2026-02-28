@@ -2,17 +2,27 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import PortalSwitcher from '@/components/portal/PortalSwitcher';
+import PortalBadge from '@/components/portal/PortalBadge';
+import { usePortal } from '@/lib/portal-context';
 
-const NAV_ITEMS = [
-  { href: '/', label: 'Home' },
-  { href: '/assessment', label: 'Assessment' },
-  { href: '/missions', label: 'Missions' },
-  { href: '/admin', label: 'Admin' },
-  { href: '/national', label: 'Strategic' },
+const ALL_NAV_ITEMS = [
+  { href: '/', label: 'Home', roles: null },
+  { href: '/assessment', label: 'Assessment', roles: null },
+  { href: '/missions', label: 'Missions', roles: null },
+  { href: '/admin', label: 'Admin', roles: ['admin', 'school_admin'] },
+  { href: '/national', label: 'Strategic', roles: ['admin'] },
 ];
 
 export default function Header() {
   const pathname = usePathname();
+  const { mode, role } = usePortal();
+
+  const navItems = ALL_NAV_ITEMS.filter((item) => {
+    if (mode === 'demo') return true;
+    if (item.roles === null) return true;
+    return item.roles.includes(role);
+  });
 
   return (
     <header className="sticky top-0 z-50 border-b border-panel-border bg-background/80 backdrop-blur-md">
@@ -24,7 +34,7 @@ export default function Header() {
         </Link>
 
         <nav className="flex items-center gap-1">
-          {NAV_ITEMS.map(({ href, label }) => {
+          {navItems.map(({ href, label }) => {
             const active = pathname === href || (href !== '/' && pathname.startsWith(href));
             return (
               <Link
@@ -41,6 +51,11 @@ export default function Header() {
             );
           })}
         </nav>
+
+        <div className="flex items-center gap-3">
+          <PortalBadge />
+          <PortalSwitcher />
+        </div>
       </div>
     </header>
   );

@@ -6,12 +6,25 @@ import NationalStatusHeader from '@/components/national/NationalStatusHeader';
 import ThreatContextPanel from '@/components/threat/ThreatContextPanel';
 import ExecutiveBriefingView from '@/components/executive/ExecutiveBriefingView';
 import ExecutiveToggle from '@/components/executive/ExecutiveToggle';
+import AccessGate from '@/components/portal/AccessGate';
 import { getSchools, getThreatContext } from '@/lib/data';
 import { getNationalStatus, computeNationalCRI, buildStrategicIndices } from '@/lib/national-status';
 import { buildExecutiveBriefing } from '@/lib/executive';
 import { EXECUTIVE_MODE_KEY } from '@/lib/constants';
 
 export default function NationalPage() {
+  return (
+    <AccessGate
+      allowedRoles={['admin']}
+      title="Strategic Console"
+      description="This console requires administrator access."
+    >
+      <NationalContent />
+    </AccessGate>
+  );
+}
+
+function NationalContent() {
   const [execMode, setExecMode] = useState(false);
 
   useEffect(() => {

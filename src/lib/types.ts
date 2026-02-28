@@ -150,3 +150,22 @@ export interface EmirateDetailData extends EmirateData {
 }
 
 export type AggregateViewLevel = 'school' | 'emirate' | 'national';
+
+// --- Portal System Types ---
+
+export type PortalMode = 'demo' | 'pilot';
+
+export type UserRole = 'guest' | 'student' | 'admin' | 'school_admin';
+
+export interface StudentProfile {
+  schoolName: string;
+  grade: string;
+  studentId: string;
+  registeredAt: string;
+}
+
+export interface PortalState {
+  mode: PortalMode;
+  role: UserRole;
+  studentProfile: StudentProfile | null;
+}

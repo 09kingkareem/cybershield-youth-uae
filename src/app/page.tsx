@@ -1,5 +1,6 @@
 import Panel from '@/components/ui/Panel';
 import Button from '@/components/ui/Button';
+import PilotModeBanner from '@/components/portal/PilotModeBanner';
 
 const STATS = [
   { value: '7', label: 'Emirates', sub: 'Nationwide coverage' },
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="mx-auto max-w-7xl px-4">
       {/* Hero */}
       <section className="py-20 text-center">
+        <PilotModeBanner />
         <div className="inline-block mb-4 px-3 py-1 rounded-full border border-accent/30 bg-accent/5 text-xs font-mono text-accent">
           National Cyber Resilience Monitoring &amp; Projection Console
         </div>

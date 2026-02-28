@@ -11,12 +11,25 @@ import ProjectionSimulator from '@/components/admin/ProjectionSimulator';
 import TrendChart from '@/components/admin/TrendChart';
 import EmirateHeatTable from '@/components/admin/EmirateHeatTable';
 import CategoryIcon from '@/components/ui/CategoryIcon';
+import AccessGate from '@/components/portal/AccessGate';
 import { getSchools, getEmirateData, getMissions, getTrendData, getEmirateDetailData } from '@/lib/data';
 import { getTier } from '@/lib/scoring';
 import { computeNationalCRI, getNationalStatus } from '@/lib/national-status';
 import type { AggregateViewLevel, Category } from '@/lib/types';
 
 export default function AdminPage() {
+  return (
+    <AccessGate
+      allowedRoles={['admin', 'school_admin']}
+      title="Admin Dashboard"
+      description="Enter your administrator access code to view the dashboard."
+    >
+      <AdminContent />
+    </AccessGate>
+  );
+}
+
+function AdminContent() {
   const [viewLevel, setViewLevel] = useState<AggregateViewLevel>('school');
 
   const schools = getSchools();

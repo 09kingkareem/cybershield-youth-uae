@@ -7,6 +7,9 @@ import Button from '@/components/ui/Button';
 import QuestionCard from '@/components/assessment/QuestionCard';
 import AssessmentProgress from '@/components/assessment/AssessmentProgress';
 import CategoryIndicator from '@/components/assessment/CategoryIndicator';
+import AccessGate from '@/components/portal/AccessGate';
+import StudentRegistration from '@/components/portal/StudentRegistration';
+import { usePortal } from '@/lib/portal-context';
 import { getQuestions } from '@/lib/data';
 import { buildResult } from '@/lib/scoring';
 import { CATEGORIES, SESSION_KEY } from '@/lib/constants';
@@ -15,6 +18,30 @@ import type { Category } from '@/lib/types';
 type Phase = 'intro' | 'questions' | 'complete';
 
 export default function AssessmentPage() {
+  const { mode, role, studentProfile } = usePortal();
+  const [registered, setRegistered] = useState(false);
+
+  // In pilot mode, require authentication first, then student registration
+  if (mode === 'pilot') {
+    return (
+      <AccessGate
+        allowedRoles={['student', 'admin']}
+        title="Assessment Access"
+        description="Enter your student or admin access code."
+      >
+        {role === 'student' && !studentProfile && !registered ? (
+          <StudentRegistration onComplete={() => setRegistered(true)} />
+        ) : (
+          <AssessmentContent />
+        )}
+      </AccessGate>
+    );
+  }
+
+  return <AssessmentContent />;
+}
+
+function AssessmentContent() {
   const router = useRouter();
   const questions = getQuestions();
   const [phase, setPhase] = useState<Phase>('intro');

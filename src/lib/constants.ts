@@ -51,3 +51,22 @@ export const CATEGORY_ABBREVIATIONS: Record<Category, string> = {
   privacy: 'PRI',
   device: 'DEV',
 };
+
+// --- Portal System Constants ---
+
+export const PORTAL_MODE_KEY = 'cybershield_portal_mode';
+export const PORTAL_ROLE_KEY = 'cybershield_portal_role';
+export const STUDENT_PROFILE_KEY = 'cybershield_student_profile';
+
+export const ACCESS_CODES: Record<string, string> = {
+  admin: 'CYBER-ADMIN-2026',
+  school_admin: 'CYBER-SCHOOL-2026',
+  student: 'CYBER-STUDENT-2026',
+};
+
+export const ROLE_LABELS: Record<string, string> = {
+  guest: 'Guest',
+  student: 'Student',
+  admin: 'Administrator',
+  school_admin: 'School Admin',
+};
