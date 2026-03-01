@@ -40,17 +40,17 @@ export default function NationalStatusHeader({
             <span className="text-xs font-mono text-muted uppercase">National Status</span>
             <StatusBadge status={status} pulse size="lg" />
           </div>
-          <div className="flex gap-6 text-center">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 text-center">
             <div>
-              <div className="text-xl font-bold font-mono text-accent">{totalSchools}</div>
+              <div className="text-lg sm:text-xl font-bold font-mono text-accent">{totalSchools}</div>
               <div className="text-xs text-muted">Schools</div>
             </div>
             <div>
-              <div className="text-xl font-bold font-mono text-accent">{totalStudents.toLocaleString()}</div>
+              <div className="text-lg sm:text-xl font-bold font-mono text-accent">{totalStudents.toLocaleString()}</div>
               <div className="text-xs text-muted">Students</div>
             </div>
             <div>
-              <div className="text-xl font-bold font-mono text-accent">7</div>
+              <div className="text-lg sm:text-xl font-bold font-mono text-accent">7</div>
               <div className="text-xs text-muted">Emirates</div>
             </div>
           </div>

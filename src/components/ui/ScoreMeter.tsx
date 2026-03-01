@@ -10,7 +10,9 @@ interface ScoreMeterProps {
   size?: number;
 }
 
-export default function ScoreMeter({ score, tier, size = 200 }: ScoreMeterProps) {
+export default function ScoreMeter({ score, tier, size: propSize = 200 }: ScoreMeterProps) {
+  // Responsive: use smaller size on mobile
+  const size = typeof window !== 'undefined' && window.innerWidth < 640 ? Math.min(propSize, 160) : propSize;
   const [animated, setAnimated] = useState(0);
   const color = getTierColor(tier);
   const strokeWidth = 10;

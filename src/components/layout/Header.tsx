@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import PortalSwitcher from '@/components/portal/PortalSwitcher';
@@ -17,6 +18,7 @@ const ALL_NAV_ITEMS = [
 export default function Header() {
   const pathname = usePathname();
   const { mode, role } = usePortal();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = ALL_NAV_ITEMS.filter((item) => {
     if (mode === 'demo') return true;
@@ -33,7 +35,8 @@ export default function Header() {
           <span className="text-muted text-xs ml-1">UAE</span>
         </Link>
 
-        <nav className="flex items-center gap-1">
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-1">
           {navItems.map(({ href, label }) => {
             const active = pathname === href || (href !== '/' && pathname.startsWith(href));
             return (
@@ -53,10 +56,50 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <PortalBadge />
+          <div className="hidden sm:block">
+            <PortalBadge />
+          </div>
           <PortalSwitcher />
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden flex flex-col items-center justify-center w-8 h-8 gap-1.5"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`block w-5 h-0.5 bg-foreground transition-transform ${menuOpen ? 'rotate-45 translate-y-1' : ''}`} />
+            <span className={`block w-5 h-0.5 bg-foreground transition-opacity ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-5 h-0.5 bg-foreground transition-transform ${menuOpen ? '-rotate-45 -translate-y-1' : ''}`} />
+          </button>
         </div>
       </div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden border-t border-panel-border bg-background/95 backdrop-blur-md">
+          <nav className="flex flex-col px-4 py-3 gap-1">
+            {navItems.map(({ href, label }) => {
+              const active = pathname === href || (href !== '/' && pathname.startsWith(href));
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`px-3 py-2.5 rounded text-sm transition-colors ${
+                    active
+                      ? 'text-accent bg-accent/10'
+                      : 'text-muted hover:text-foreground hover:bg-panel-bg'
+                  }`}
+                >
+                  {label}
+                </Link>
+              );
+            })}
+          </nav>
+          <div className="sm:hidden px-4 pb-3">
+            <PortalBadge />
+          </div>
+        </div>
+      )}
     </header>
   );
 }

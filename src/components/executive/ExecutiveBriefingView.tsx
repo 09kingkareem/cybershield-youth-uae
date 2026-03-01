@@ -15,14 +15,14 @@ export default function ExecutiveBriefingView({ briefing }: ExecutiveBriefingVie
     <div className="space-y-6">
       {/* Header */}
       <Panel className="p-6 relative overflow-hidden scan-line" glow>
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
           <div>
             <div className="text-xs font-mono text-accent uppercase tracking-widest mb-1">Executive Briefing</div>
-            <h2 className="text-xl font-bold">UAE Youth Cyber Resilience — Strategic Assessment</h2>
+            <h2 className="text-lg sm:text-xl font-bold">UAE Youth Cyber Resilience — Strategic Assessment</h2>
           </div>
           <StatusBadge status={briefing.nationalStatus} pulse size="lg" />
         </div>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-4 sm:gap-8">
           <LargeMetric
             value={briefing.nationalCRI}
             label="National CRI"

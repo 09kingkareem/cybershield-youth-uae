@@ -50,7 +50,7 @@ function AdminContent() {
       </div>
 
       {/* Overview cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <StrategicStatusCard title="Schools" value={schools.length} subtitle="Participating institutions" />
         <StrategicStatusCard title="Students" value={totalStudents.toLocaleString()} subtitle="Total assessed" />
         <StrategicStatusCard title="Average CRI" value={avgCRI} subtitle={`Status: ${status}`} tier={tier} />
@@ -69,7 +69,7 @@ function AdminContent() {
           {/* Trend Charts */}
           <div className="mb-8">
             <h2 className="text-lg font-semibold mb-4">3-Month CRI Trends</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {trends.schools.slice(0, 8).map((s) => (
                 <TrendChart
                   key={s.name}
@@ -94,7 +94,7 @@ function AdminContent() {
           {/* Emirate Cards */}
           <div className="mb-8">
             <h2 className="text-lg font-semibold mb-4">Emirate Overview</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {emirates.sort((a, b) => b.averageCRI - a.averageCRI).map((e) => (
                 <EmirateCard key={e.emirate} data={e} />
               ))}

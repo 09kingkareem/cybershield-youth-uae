@@ -52,7 +52,7 @@ export default function ResultsPage() {
         </div>
 
         {/* Status cards */}
-        <div className="md:col-span-2 grid grid-cols-2 gap-4">
+        <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <StrategicStatusCard
             title="Overall CRI"
             value={`${result.overall}/100`}

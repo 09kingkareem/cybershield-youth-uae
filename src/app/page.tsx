@@ -32,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-12">
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4 pb-12">
         {STATS.map((s) => (
           <Panel key={s.label} className="p-5 text-center" glow>
             <div className="text-3xl font-bold font-mono text-accent">{s.value}</div>

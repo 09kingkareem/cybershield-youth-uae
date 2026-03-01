@@ -82,7 +82,7 @@ export default function ProjectionSimulator({ missions, schools }: ProjectionSim
       </div>
 
       {/* Results */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
         <div className="text-center">
           <div className="text-xs text-muted font-mono mb-1">Current</div>
           <div className="text-2xl font-bold font-mono" style={{ color: '#64748b' }}>{result.currentAvg}</div>
